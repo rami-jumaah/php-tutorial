@@ -23,7 +23,7 @@
     # - { role: postgresql }
 
     ## Scripting / Language support
-    # - { role: php-fpm }       # PHP using Nginx and PHP-FPM
+    - { role: php-fpm }       # PHP using Nginx and PHP-FPM
     # - { role: php-apache }    # PHP using Apache and mod-php
     # - { role: django }        # Django framework
 

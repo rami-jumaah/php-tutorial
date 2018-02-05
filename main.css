@@ -1,0 +1,226 @@
+body {
+  background-color: #abc350;
+  background-size: cover;
+}
+
+.header {
+  padding: 10px;
+  background-color: white;
+}
+
+.logo {
+  width: 140px;
+}
+
+.button-login{
+  margin-top: 19px;
+}
+
+.header1{
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.page{
+  height: 100%;
+}
+
+.intro-explain{
+  padding-top: 70px;
+  font-size: 20px;
+  margin-right: 2px;
+  text-align: center;
+}
+
+.page-divider::before {
+  display: block;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1px;
+  background-color: #95ab45;
+  height: 100vh;
+}
+
+.myIframe {
+  position: relative;
+  padding-bottom: 65.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: auto;
+  -webkit-overflow-scrolling:touch; /*//<<--- THIS IS THE KEY*/
+  border: solid black 1px;
+  align-items: center;
+}
+
+.myIframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* make sidebar nav vertical */
+@media (min-width: 768px) {
+  .sidebar-nav .navbar .navbar-collapse {
+    padding: 0;
+    max-height: none;
+  }
+  .sidebar-nav .navbar ul {
+    float: none;
+    display: block;
+    margin-left: -16px;
+    margin-right: -16px;
+  }
+  .sidebar-nav .navbar li {
+    float: none;
+    display: block;
+    font-weight: bold;
+    border-bottom: 1px solid #95ab45;
+  }
+
+  .sidebar-nav .navbar li.active a,
+  .sidebar-nav .navbar li.active a:hover {
+    color: #fff;
+    background-color: #95ab45;
+  }
+
+  .sidebar-nav .navbar li a {
+    color: #fff;
+    transition: background .5s ease;
+    background: #abc350;
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+  }
+  .sidebar-nav .navbar li a:hover,
+  .sidebar-nav .navbar li a:focus {
+    transition: background .5s ease;
+    color: #fff;
+    background: #95ab45;
+  }
+  .navbar{
+    border: 0;
+  }
+}
+
+
+.name_company{
+    font-size: 60px;
+    padding-bottom: 50px;
+    background-color: red;
+    background-color: red;
+
+
+}
+
+.name_person {
+    background-color: red;
+
+    font-size: 22px;
+}
+.pic_pers{
+    display: block;
+    background-color: red;
+
+}
+
+.pic_pers img{
+    width: 100%;
+}
+
+.desc_per{
+    font-size: 18px;
+    background-color: red;
+
+}
+
+.mail_per{
+    font-size: 13px;
+}
+
+.aboutUs_desc{
+    font-size: 20px;
+    padding-top: 40px;
+}
+.contact_form{
+    padding-top: 20px;
+}
+
+
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea, #email{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+/* Style the submit button */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+/* Style the container */
+.section_form {
+    border-radius: 5px;
+    /*background-color: #abc350;*/
+    padding-top: 5px;
+    margin-top: 5px;
+    padding-bottom: 40px;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+    padding: 2px 2px 2px 2px;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+
+
+
+
+
+
